@@ -34,16 +34,6 @@ pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute lab2_extended.ipynb --output lab2_extended.ipynb --ExecutePreprocessor.timeout=1800
 ```
 
-## Where each grading item lives
-
-- **Evaluation plan** — Section 6 (`purged_blocked_splits`, fold report table)
-- **Ensemble models** — Section 7 (model ladder table, PR curves)
-- **Cost-based decisions** — Section 9 (cost sweep, threshold vs naive 0.5)
-- **Imbalance and tuning** — Sections 8 to 10 (SMOTE in-fold vs leaky, Optuna study)
-- **Calibration** — Section 11 (reliability diagram, Brier score, recomputed threshold)
-- **Explainability and fairness** — Section 12 (SHAP, region/segment subgroup tables)
-- **Reproducibility and report** — this README, `requirements.txt`, `Assignment2_Report.docx`
-
 ## Known limitation
 
 Assignment 1's RFM features are computed once per customer over that customer's entire
