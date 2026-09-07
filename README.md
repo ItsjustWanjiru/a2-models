@@ -34,12 +34,6 @@ pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute lab2_extended.ipynb --output lab2_extended.ipynb --ExecutePreprocessor.timeout=1800
 ```
 
-A fresh run takes roughly 15 to 20 minutes, most of it in the Section 7 model ladder,
-the Section 8 SMOTE leak demo, and the Section 10 Optuna study (60 trials, 2 folds
-each, pruned). Everything else finishes in seconds. Re-running is deterministic
-(`random_state=42` throughout, Optuna `TPESampler(seed=42)`); exact numbers may drift
-by a few thousandths of a point across scikit-learn/xgboost versions, not more.
-
 ## Where each grading item lives
 
 - **Evaluation plan** — Section 6 (`purged_blocked_splits`, fold report table)
